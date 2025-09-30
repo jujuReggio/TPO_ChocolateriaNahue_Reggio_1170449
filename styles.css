@@ -456,7 +456,7 @@ input[type="submit"]:hover {
 /*Font-size*/
 @media (max-width: 767px) {
     h1 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     h2 {
@@ -464,10 +464,27 @@ input[type="submit"]:hover {
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .producto-nombre {
+        font-size: 1em;
+    }
+
+    .producto-precio {
+        font-size: 0.95em;
+    }
+
+    .producto-descripcion {
+        font-size: 0.9em;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 20px 30px;
     }
 }
