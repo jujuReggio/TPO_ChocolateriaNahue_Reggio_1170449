@@ -456,11 +456,11 @@ input[type="submit"]:hover {
 /*Font-size*/
 @media (max-width: 767px) {
     h1 {
-        font-size: 26px;
+        font-size: 16px;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     h3 {
@@ -491,7 +491,8 @@ input[type="submit"]:hover {
         font-size: 14px;
         padding: 20px 30px;
     }
-
+    
+     .Header_Complete h1,
     .Header_Logo h1 {
         font-size: 20px;
     }
