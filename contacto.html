@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolateria Nahue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <header>
+        <div class="Header_Complete">
+            <div class="Header_Logo">
+                <h2>Chocolateria Nahue</h2>
+                <img  src="Imagenes/Logo.png" alt="Logo" width="110" height="50" class="Logo">
+            </div><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Productos/chocolates.html">Productos</a></li>
+                    <li><a href="conocenos.html">Conocenos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="panel-container">
+
+            <div class="panel panel-contacto">
+                <h1>Ubicación y Contacto</h1>
+
+                <div class="contacto-info">
+                    <h3>Dirección dentro de la galería:</h3>
+                    <p>Galería, Local 3</p>
+                </div>
+
+                <div class="contacto-info">
+                    <h3>Horarios de atención:</h3>
+                    <p>Lunes a viernes: 9:00 - 18.30 hs.</p>
+                    <p>Sábados: 9:00 - 15.00 hs.</p>
+                </div>
+
+                <div class="contacto-info">
+                    <h3>Teléfono de contacto:</h3>
+                    <p>+54 911 5178 9938</p>
+                </div>
+
+                <div class="contacto-info">
+                    <h3>Correo electrónico:</h3>
+                    <p>nahueChocolateria@gmail.com.ar</p>
+                </div>
+            </div>
+            <div class="panel panel-formulario">
+
+                <form action="https://formspree.io/f/manpenze" method="POST">
+                        <h1>Dejanos tus preguntas o sugerencias y te responderemos pronto.</h1><br>
+                        
+                        <label for="name">Nombre y Apellido:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        
+                        <label for="mail">EMail:</label><br>
+                        <input type="email" id="email" name="mail"><br>
+                        
+                        <label for="comenta">Comentario:</label><br>
+                        <textarea name="comenta" id="comentario" cols="20" rows="10"></textarea><br>
+                        
+                        <input type="submit" value="Enviar Comentario"><br>
+                </form>
+            </div>
+                
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+        <div class="footer-izquierda">
+            <img src="Imagenes/Logo.png" alt="Logo Chocolatería Nahue" class="footer-logo">
+            <p class="footer-nombre">Chocolatería Nahue</p>
+        </div>
+
+        <div class="footer-derecha">
+            <p>© 2025 Nahue.com Todos los derechos reservados.</p>
+            <p>Diseño y desarrollo: Julieta Reggio</p>
+        </div>
+    
+    </footer>
+
+</body>
+</html>

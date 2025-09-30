@@ -1,0 +1,454 @@
+/* -------------- Estilos Generales ---------------*/
+body {
+    background-image: url(Imagenes/Fondo.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Tipografía consistente */
+h1 {
+    color: rgb(148, 107, 50);
+    font-family: 'Hero';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: rgb(8, 43, 63);
+    font-family: 'CinzelDecorative';
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3 {
+    color: rgb(201, 165, 94);
+    font-family: 'Hero';
+    font-size: 26px;
+    margin: 10px 0 5px;
+}
+
+p {
+    color: rgb(201, 165, 94);
+    font-family: 'Hero-regular';
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+/* Panel Reutilizable */
+.panel {
+    background-color: rgb(253, 251, 247);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.panel-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 60px;
+    width: 90%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.panel h1 {
+    border-bottom: 3px solid rgb(175, 144, 81);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* ---------------- Header y menú -------------*/
+.Header_Complete {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    background: url(Imagenes/Header.png) center/cover no-repeat;
+}
+
+.Header_Logo {
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: 2px solid rgb(243, 232, 211);
+}
+
+.Logo {
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+/* Menú de navegación */
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    color: rgb(228, 222, 204);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(228, 222, 204, 0.3);
+}
+
+/* ----------------- Inicio ----------------- */
+.panel-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.inicio-boton {
+    display: inline-block;
+    border: 2px solid rgb(112, 69, 44);
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: rgb(148, 107, 50);
+    text-decoration: none; 
+    font-family: 'Hero';
+    font-weight: bold;
+    font-size: 30px;
+    transition: background-color .3s ease, transform .2s ease;
+    margin-top: 20px; 
+}
+
+.inicio-boton:hover {
+    background-color: rgba(112, 69, 44, 0.1);
+    transform: scale(1.05);
+}
+
+#Home_Picture {
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ------------------ Productos ----------------*/
+.product-menu{
+    background-color: rgb(73, 77, 94);
+    width: 100%;
+    box-shadow: 0 6px 15px -8px rgba(0, 0, 0, 0.8);
+}
+
+.productos-panel {
+    padding: 20px 40px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: rgb(253, 251, 247);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.producto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto-nombre {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Hero';
+    color: rgb(201, 165, 94);
+}
+
+.producto-precio {
+    font-size: 1.1em;
+    color: rgb(112, 69, 44);
+}
+
+.producto-contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.producto img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto-descripcion {
+    flex: 1;
+    font-size: 0.95em;
+    color: rgb(119, 85, 38);
+    margin: 0;
+}
+
+/* ------------------ Conocenos ----------------*/
+.panel-conocenos-historia {
+    flex: 1.8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.panel-conocenos-historia .texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.panel-conocenos-historia img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.panel-conocenos-equipo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+/* --------------- contacto -------------------*/
+.panel-contacto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.panel-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Formulario */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-family: 'Hero';
+    font-size: 20px;
+    color: rgb(175, 144, 81);
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #5f4632;
+    color: rgb(236, 221, 206);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .15s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8a6343;
+    transform: scale(1.03);
+}
+
+
+/* ----------------- Footer --------------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1eee7;
+    padding: 40px 60px;
+    font-size: 16px;
+    color: #a3834b;
+}
+
+.footer-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 5px;
+}
+ 
+.footer-nombre {
+    font-weight: bold;
+    margin: 0;
+    color: #a3834b;
+}
+
+.footer-derecha {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* ← separa las líneas de texto */
+}
+
+.footer-derecha p {
+    margin: 0;
+}
+
+/* --------------- Media queries ------------------ */
+/*Menu*/
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a{
+        font-size: 0.9em;
+        padding: 0 5px;  
+    }
+}
+
+/*Contacto*/
+@media (max-width: 767px) {
+    .contacto-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacto-texto,
+    .contacto-contenedor form {
+        width: 100%;
+    }
+    
+    .form-container {
+        max-width: 100%;
+    }
+}
+
+/* Responsive para paneles */
+@media (max-width: 767px) {
+    .panel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .panel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #Home_Picture {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+/*Conocenos*/
+@media (max-width: 767px) {
+    .panel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .panel-conocenos-historia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .panel-conocenos-historia img {
+        max-width: 100%;
+    }
+
+    .panel-conocenos-equipo {
+        text-align: center;
+    }
+}
+
+/*Productos*/
+@media (max-width: 767px) {
+    .producto {
+        flex: 1 1 100%;
+    }
+
+    .producto-contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .producto img {
+        width: 100%;
+    }
+
+    .producto-descripcion {
+        margin-top: 10px;
+    }
+}
