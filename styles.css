@@ -451,12 +451,23 @@ input[type="submit"]:hover {
     .producto-descripcion {
         margin-top: 10px;
     }
+
+      .producto-nombre {
+        font-size: 1em;
+    }
+     .producto-precio {
+        font-size: 0.95em;
+    }
+
+    .producto-descripcion {
+        font-size: 0.9em;
+    }
 }
 
 /*Font-size*/
 @media (max-width: 767px) {
     h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     h2 {
@@ -473,18 +484,6 @@ input[type="submit"]:hover {
 
     .inicio-boton{
         font-size: 20px;
-    }
-
-    .producto-nombre {
-        font-size: 1em;
-    }
-
-    .producto-precio {
-        font-size: 0.95em;
-    }
-
-    .producto-descripcion {
-        font-size: 0.9em;
     }
 
     .footer {
