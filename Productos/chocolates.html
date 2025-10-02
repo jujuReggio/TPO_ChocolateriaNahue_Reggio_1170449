@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-        <div class="Header_Complete">
-            <div class="Header_Logo">
+        <div class="Header-complete">
+            <div class="Header-logo">
                 <h2>Chocolateria Nahue</h2>
                 <img  src="../Imagenes/Logo.png" alt="Logo" width="110" height="50" class="Logo">
             </div><br>
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="chocolates.html">Productos</a></li>
+                    <li class="selected"><a href="chocolates.html">Productos</a></li>
                     <li><a href="../conocenos.html">Conocenos</a></li>
                     <li><a href="../contacto.html">Contacto</a></li>
                 </ul>
@@ -27,71 +27,82 @@
         <main>
             <nav class="product-menu">
                 <ul>
-                    <li><a href="chocolates.html">Chocolates</a></li>
+                    <li class="selected"><a href="chocolates.html">Chocolates</a></li>
                     <li><a href="bombones.html">Bombones</a></li>
                     <li><a href="bebidas.html">Bebidas</a></li>
                     <li><a href="otros.html">Otros</a></li>
                 </ul>
             </nav><br>
 
-            <section class="panel productos-panel">
+            <section class="panel product-panel">
                 <h1>Chocolates</h1>
-                <div class="productos-grid">
+                <div class="product-grid">
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Tableta 80% Cacao</h3>
-                            <h3 class="producto-precio">$9.800</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Tableta 80% Cacao</h3>
+                            <h3 class="product-price">$9.800</h3>
                         </div>
-                        <div class="producto-contenido">
                             <img src="../Imagenes/Productos_Chocolates/Chocolates_Amargo.png" alt="Tableta 80% Cacao">
-                            <p class="producto-descripcion">Tableta grande de 200 g elaborada con 80% de sólidos de cacao, manteca de cacao y un bajo contenido de azúcar. Sabor intenso, amargo y aromático.</p>
-                        </div>
+                            <p class="product-description">Tableta grande de 200 g elaborada con 80% de sólidos de cacao, manteca de cacao y un bajo contenido de azúcar. Sabor intenso, amargo y aromático.</p>
                     </div>
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Tableta con Pistacho</h3>
-                            <h3 class="producto-precio">$10.500</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Tableta con Pistacho</h3>
+                            <h3 class="product-price">$10.500</h3>
                         </div>
-                        <div class="producto-contenido">
                             <img src="../Imagenes/Productos_Chocolates/Chocolates_Pistachio.png" alt="Tableta con Pistacho">
-                            <p class="producto-descripcion">Tableta de 200 g de chocolate con leche (40% cacao) con trozos de pistacho tostado.</p>
-                        </div>
+                            <p class="product-description">Tableta de 200 g de chocolate con leche (40% cacao) con trozos de pistacho tostado.</p>
                     </div>
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Tableta Chocolate Blanco</h3>
-                            <h3 class="producto-precio">$8.900</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Tableta Chocolate Blanco</h3>
+                            <h3 class="product-price">$8.900</h3>
                         </div>
-                        <div class="producto-contenido">
-                            <img src="../Imagenes/Productos_Chocolates/Chocolates_Pistachio.png" alt="Tableta con Pistacho">
-                            <p class="producto-descripcion">Tableta de 200 g a base de manteca de cacao, leche en polvo, azúcar y un toque de vainilla. Cremosa y de dulzor equilibrado.</p>
-                        </div>
+                            <img src="../Imagenes/Productos_Chocolates/Chocolates_Blanco.png" alt="Tableta Chocolate Blanco">
+                            <p class="product-description">Tableta de 200 g a base de manteca de cacao, leche en polvo, azúcar y un toque de vainilla. Cremosa y de dulzor equilibrado.</p>
                     </div>
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Tableta Chocolate Sin Azúcar</h3>
-                            <h3 class="producto-precio">$9.500</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Tableta Chocolate Sin Azúcar</h3>
+                            <h3 class="product-price">$9.500</h3>
                         </div>
-                        <div class="producto-contenido">
-                            <img src="../Imagenes/Productos_Chocolates/Chocolates_SinAzucar.png" alt="Tableta con Pistacho">
-                            <p class="producto-descripcion">Tableta de 200 g de chocolate amargo (70% cacao), endulzada con maltitol y stevia. Apta para personas que evitan el azúcar.</p>
-                        </div>
+                            <img src="../Imagenes/Productos_Chocolates/Chocolates_SinAzucar.png" alt="Tableta Sin Azucar">
+                            <p class="product-description">Tableta de 200 g de chocolate amargo (70% cacao), endulzada con maltitol y stevia. Apta para personas que evitan el azúcar.</p>
                     </div>
+
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Chocolate en Rama (amargo y con leche)</h3>
+                            <h3 class="product-price">$8.900</h3>
+                        </div>
+                            <img src="../Imagenes/Productos_Chocolates/Chocolates_EnRama.png" alt="Chocolate en Rama, amargo y con leche">
+                            <p class="product-description">Tableta de 200 g a base de manteca de cacao, leche en polvo, azúcar y un toque de vainilla. Cremosa y de dulzor equilibrado.</p>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Chocolate en Rama (blanco y con leche)</h3>
+                            <h3 class="product-price">$9.500</h3>
+                        </div>
+                            <img src="../Imagenes/Productos_Chocolates/Chocolates_EnRamaBlanco.png" alt="Chocolate en Rama, blanco y con leche">
+                            <p class="product-description">Tableta de 200 g de chocolate amargo (70% cacao), endulzada con maltitol y stevia. Apta para personas que evitan el azúcar.</p>
+                    </div>
+
                 </div>
             </section>
         </main>
 
    <footer class="footer">
-        <div class="footer-izquierda">
+        <div class="footer-left">
             <img src="../Imagenes/Logo.png" alt="Logo Chocolatería Nahue" class="footer-logo">
-            <p class="footer-nombre">Chocolatería Nahue</p>
+            <p class="footer-name">Chocolatería Nahue</p>
         </div>
 
-        <div class="footer-derecha">
+        <div class="footer-right">
             <p>© 2025 Nahue.com Todos los derechos reservados.</p>
             <p>Diseño y desarrollo: Julieta Reggio</p>
         </div>

@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-        <div class="Header_Complete">
-            <div class="Header_Logo">
+        <div class="Header-complete">
+            <div class="Header-logo">
                 <h2>Chocolateria Nahue</h2>
                 <img  src="../Imagenes/Logo.png" alt="Logo" width="110" height="50" class="Logo">
             </div><br>
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="chocolates.html">Productos</a></li>
+                    <li class="selected"><a href="chocolates.html">Productos</a></li>
                     <li><a href="../conocenos.html">Conocenos</a></li>
                     <li><a href="../contacto.html">Contacto</a></li>
                 </ul>
@@ -28,59 +28,81 @@
             <nav class="product-menu">
                 <ul>
                     <li><a href="chocolates.html">Chocolates</a></li>
-                    <li><a href="bombones.html">Bombones</a></li>
+                    <li class="selected"><a href="bombones.html">Bombones</a></li>
                     <li><a href="bebidas.html">Bebidas</a></li>
                     <li><a href="otros.html">Otros</a></li>
                 </ul>
             </nav><br>
 
-            <section class="panel productos-panel">
+            <section class="panel product-panel">
                 <h1>Bombones</h1>
-                <div class="productos-grid">
+                <div class="product-grid">
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Caja Surtida x12 unidades</h3>
-                            <h3 class="producto-precio">$13.800</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Caja Surtida x12 unidades</h3>
+                            <h3 class="product-price">$13.800</h3>
                         </div>
-                        <div class="producto-contenido">
                             <img src="../Imagenes/Productos_Bombones/Bombones_x12.png" alt="Caja Surtida x12.">
-                            <p class="producto-descripcion">Caja de 220 g con 12 bombones artesanales surtidos. Rellenos variados: praliné de avellanas, mousse de chocolate, dulce de leche y frutas confitadas.</p>
-                        </div>
+                            <p class="product-description">Caja de 220 g con 12 bombones artesanales surtidos. Rellenos variados: praliné de avellanas, mousse de chocolate, dulce de leche y frutas confitadas.</p>
                     </div>
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Caja Surtida x15 unidades</h3>
-                            <h3 class="producto-precio">$16.500</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Caja Surtida x15 unidades</h3>
+                            <h3 class="product-price">$16.500</h3>
                         </div>
-                        <div class="producto-contenido">
                             <img src="../Imagenes/Productos_Bombones/Bombones_x15.png" alt="Caja Surtida x15.">
-                            <p class="producto-descripcion">Caja de 280 g con 15 bombones artesanales. Incluye combinaciones de frutos secos caramelizados, cremas de chocolate y licores suaves.</p>
-                        </div>
+                            <p class="product-description">Caja de 280 g con 15 bombones artesanales. Incluye combinaciones de frutos secos caramelizados, cremas de chocolate y licores suaves.</p>
                     </div>
 
-                    <div class="producto">
-                        <div class="producto-header">
-                            <h3 class="producto-nombre">Caja Surtida x18 unidades</h3>
-                            <h3 class="producto-precio">$19.800</h3>
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Caja Surtida x18 unidades</h3>
+                            <h3 class="product-price">$19.800</h3>
                         </div>
-                        <div class="producto-contenido">
                             <img src="../Imagenes/Productos_Bombones/Bombones_x18.png" alt="Caja Surtida x18.">
-                            <p class="producto-descripcion">Caja de 340 g con 18 bombones surtidos. Variedad de ganaches, mousses, rellenos frutales y pralinés en distintas coberturas.</p>
-                        </div>
+                            <p class="product-description">Caja de 340 g con 18 bombones surtidos. Variedad de ganaches, mousses, rellenos frutales y pralinés en distintas coberturas.</p>
                     </div>
+
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Caja Bombones Blancos x12</h3>
+                            <h3 class="product-price">$13.800</h3>
+                        </div>
+                            <img src="../Imagenes/Productos_Bombones/Bombones_BlancoX12.png" alt="Caja Blancos x12.">
+                            <p class="product-description">Caja de 220 g con 12 bombones artesanales surtidos. Rellenos variados: praliné de avellanas, mousse de chocolate, dulce de leche y frutas confitadas.</p>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Caja Bombones Blancos x6</h3>
+                            <h3 class="product-price">$16.500</h3>
+                        </div>
+                            <img src="../Imagenes/Productos_Bombones/Bombones_BlancoX6.png" alt="Caja Blancos x6.">
+                            <p class="product-description">Caja de 280 g con 15 bombones artesanales. Incluye combinaciones de frutos secos caramelizados, cremas de chocolate y licores suaves.</p>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-header">
+                            <h3 class="product-name">Caja Bombones Amargos x6 unidades</h3>
+                            <h3 class="product-price">$19.800</h3>
+                        </div>
+                            <img src="../Imagenes/Productos_Bombones/Bombones_AmargosX6.png" alt="Caja Amargo x6.">
+                            <p class="product-description">Caja de 340 g con 18 bombones surtidos. Variedad de ganaches, mousses, rellenos frutales y pralinés en distintas coberturas.</p>
+                    </div>
+
                 </div>
             </section>
         </main>
 
    <footer class="footer">
-        <div class="footer-izquierda">
+        <div class="footer-left">
             <img src="../Imagenes/Logo.png" alt="Logo Chocolatería Nahue" class="footer-logo">
-            <p class="footer-nombre">Chocolatería Nahue</p>
+            <p class="footer-name">Chocolatería Nahue</p>
         </div>
 
-        <div class="footer-derecha">
+        <div class="footer-right">
             <p>© 2025 Nahue.com Todos los derechos reservados.</p>
             <p>Diseño y desarrollo: Julieta Reggio</p>
         </div>
