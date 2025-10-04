@@ -204,6 +204,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .product-name {
@@ -214,6 +215,7 @@ nav ul li a:hover {
 }
 
 .product-price {
+    margin-left: auto;
     font-size: 1.1em;
     color: rgb(112, 69, 44);
 }
@@ -450,33 +452,30 @@ input[type="submit"]:hover {
 
 /*Productos*/
 @media (max-width: 767px) {
-    .producto {
+    .product {
         flex: 1 1 100%;
     }
 
-    .producto-contenido {
+    .product-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .producto img {
+    .product img {
         width: 100%;
     }
 
-    .producto-descripcion {
+    .product-description {
         margin-top: 10px;
+        font-size: 0.9em;
     }
 
-      .producto-nombre {
+    .product-name {
         font-size: 1em;
     }
-    .producto-precio {
+    .product-price {
         font-size: 0.95em;
-    }
-
-    .producto-descripcion {
-        font-size: 0.9em;
     }
 }
 
@@ -498,7 +497,7 @@ input[type="submit"]:hover {
         font-size: 16px;
     }
 
-    .inicio-boton{
+    .home-button{
         font-size: 20px;
     }
 
