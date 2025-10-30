@@ -273,33 +273,7 @@ nav ul li a:hover {
 }
 
 /* --------------- promociones -------------------*/
-/* estilos y elementos generales*/
-.panel-promos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(253, 251, 247);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    width: 80%;
-    max-width: 700px;
-}
-
-.panel-promos h1 {
-    color: rgb(148, 107, 50);
-    border-bottom: 3px solid rgb(175, 144, 81);
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.panel-promos h2 {
-    color: rgb(112, 69, 44);
-    margin-bottom: 25px;
-    font-size: 24px;
-    text-align: center;
-}
-
+/* resultados*/
 .resultado {
     background-color: #fffaf1;
     border-left: 4px solid rgb(175, 144, 81);
@@ -308,8 +282,36 @@ nav ul li a:hover {
     font-size: 17px;
     color: rgb(90, 60, 30);
 }
+.resultado-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.resultado-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+.resultado-nombre {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc9960;
+}
+.resultado-precio {
+    font-size: 20px;
+    color: #966936;
+}
+.resultado-ahorro {
+    font-size: 22px;
+    color: rgb(185, 147, 64);
+    font-weight: bold;
+    border: 1px solid #d3a87c;
+    padding: 10px;
+}
 
-/*los select*/
+/*los select y botones*/
 select {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -324,17 +326,18 @@ select {
     transition: all 0.3s ease;
     appearance: none;
 }
+
 select:hover {
     border-color: #b3744c;
     background-color: #fff3e6;
 }
+
 select:focus {
     outline: none;
     border-color: #8c4f2d;
     box-shadow: 0 0 5px rgba(140, 79, 45, 0.5);
 }
 
-/*los botones*/
 .add-button {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -351,61 +354,27 @@ select:focus {
     background-color: #b3744c;
 }
 
-/*carritos*/
-#carrito div {
-    background-color: #fff8f0;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-#carrito input[type="number"] {
-    border-radius: 6px;
-    border: 1px solid #d3a87c;
-    padding: 4px;
-    text-align: center;
-}
-
-#carrito button {
-    font-weight: bold;
-    color: red;
+.btn-eliminar {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: rgb(128, 87, 50);
+    color: white;
     border: none;
-    background: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
-/*resultado*/
-.resultado-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.resultado-img img {
-    width: 300px;
-    border-radius: 8px;
-}
-
-.resultado-nombre {
-    font-size: 20px;
+/*promo 2*/
+#carrito button {
     font-weight: bold;
-    color: #cc9960;
+    color: rgb(230, 118, 74);
+    border: none;
+    background-color: #fceee7;
+    cursor: pointer;
 }
-
-.resultado-precio {
-    font-size: 20px;
-    color: #966936;
-}
-
-.resultado-ahorro {
-    font-size: 22px;
-    color: rgb(185, 147, 64);
-    font-weight: bold;
-    border: 1px solid #d3a87c;
-    padding: 10px;
-}
-/*promocion 3*/
 .carrito-item {
     display: flex;
     justify-content: space-between;
@@ -416,46 +385,59 @@ select:focus {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     gap: 10px;
 }
-
 .carrito-nombre {
     flex: 1;
     font-size: 16px;
     font-weight: bold;
-    color: #703f1c;
+    color: #9c7356;
 }
-
 .carrito-cantidad {
     width: 60px;
     text-align: center;
     border-radius: 6px;
-    border: 1px solid #d3a87c;
+    border: 2px solid #d3a87c;
     font-size: 16px;
 }
 
-.carrito-subtotal {
-    flex: 0.4;
-    text-align: right;
-    font-size: 16px;
-    color: #333;
+/*promocion 3*/
+.promo3-item {
+    position: relative;
+    text-align: center;
+    margin: 10px;
 }
 
-.carrito-eliminar {
+.promo3-img {
+    height: 120px;
+    border-radius: 8px;
+}
+
+.promo3-precio {
+    margin: 5px 0 0 0;
     font-weight: bold;
-    color: rgb(119, 55, 29);
-    border: none;
-    background: none;
-    cursor: pointer;
     font-size: 16px;
+
+}
+.promo3-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-/*Para las opciones desplegables*/
+#promo3Carrito {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/*Acordeon*/
 .promo-item {
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-bottom: 15px;
     overflow: hidden;
 }
-
 .promo-header {
     display: flex;
     flex-direction: column; 
@@ -477,27 +459,6 @@ select:focus {
     display: none;
     padding: 15px;
     background-color: #fff;
-}
-
-.promo3-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-
-.promo3-container .promo3-item {
-    text-align: center;
-    margin: 5px;
-    flex: 1 1 120px;
-}
-
-.promo3-container img {
-    width: 100%;
-    height: auto;
-    max-width: 120px;
-    border-radius: 10px;
 }
 
 /* --------------- contacto -------------------*/
@@ -610,7 +571,6 @@ input[type="submit"]:hover {
         font-size: 0.9em;
         padding: 0 2px;  
     }
-
     .product-menu nav ul{
         flex-direction: row;
     }
@@ -622,12 +582,10 @@ input[type="submit"]:hover {
         flex-direction: column;
         align-items: center;
     }
-    
     .contacto-texto,
     .contacto-contenedor form {
         width: 100%;
     }
-    
     .form-container {
         max-width: 100%;
     }
@@ -639,12 +597,10 @@ input[type="submit"]:hover {
         flex-direction: column;
         align-items: center;
     }
-    
     .panel {
         width: 100%;
         max-width: 100%;
     }
-
     #home_picture {
         width: 100%;
         height: auto;
@@ -663,16 +619,13 @@ input[type="submit"]:hover {
         width: 100%;
         max-width: 100%;
     }
-
     .panel-conocenos-historia {
         flex-direction: column;
         text-align: center;
     }
-
     .panel-conocenos-historia img {
         max-width: 100%;
     }
-
     .panel-conocenos-equipo {
         text-align: center;
     }
@@ -683,22 +636,18 @@ input[type="submit"]:hover {
     .product {
         flex: 1 1 100%;
     }
-
     .product-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .product img {
         width: 100%;
     }
-
     .product-description {
         margin-top: 10px;
         font-size: 0.9em;
     }
-
     .product-name {
         font-size: 1em;
     }
@@ -712,15 +661,12 @@ input[type="submit"]:hover {
     h1 {
         font-size: 20px;
     }
-
     h2 {
         font-size: 18px;
     }
-
     h3 {
         font-size: 20px;
     }
-
     p {
         font-size: 16px;
     }
@@ -734,17 +680,43 @@ input[type="submit"]:hover {
         padding: 20px 30px;
     }
     
-     .Header_Complete h1,
+    .Header_Complete h1,
     .Header_Logo h1 {
         font-size: 20px;
     }
 }
 
 /*promos*/
+@media (max-width: 767px) {
+    /* resultados */
+  .resultado {
+    font-size: 15px;
+  }
+  .resultado-nombre,
+  .resultado-precio {
+    font-size: 16px;
+  }
+  .resultado-ahorro {
+    font-size: 18px;
+    padding: 8px;
+  }
 
-@media (max-width: 400px) {
-    .promo3-container .promo3-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
+    /* Contenedor promo 3 */
+  #promo3Carrito,
+  .promo3-container {
+    flex-direction: column;
+    align-items: center;
+  }
+    
+    /* Items promo 3 */
+  .promo3-container,
+  .promo3-item {
+    width: 100%;
+    max-width: 250px;
+  }
+
+    /* Imagenes promo 3 */
+  .promo3-img {
+    height: 80px;
+  }
 }

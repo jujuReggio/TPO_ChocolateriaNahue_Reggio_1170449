@@ -266,36 +266,26 @@ carrito.forEach((item, index) => {
         }
         carrito3.forEach((p, index) => {
             const div = document.createElement("div");
-            div.style.display = "inline-block";
-            div.style.position = "relative";
-             div.style.textAlign = "center"; 
-            div.style.marginRight = "10px";
+            div.classList.add("promo3-item");
 
             const img = document.createElement("img");
             img.src = p.img;
             img.alt = p.nombre;
-            img.style.height = "120px";
-            img.style.borderRadius = "8px";
+            img.classList.add("promo3-img");
             div.appendChild(img);
 
             const precio = document.createElement("p");
             precio.textContent = `$${p.precio.toLocaleString("es-AR")}`;
-            precio.style.margin = "5px 0 0 0";
-            precio.style.fontWeight = "bold";
+            precio.classList.add("promo3-precio");
             div.appendChild(precio);
 
             const btn = document.createElement("button");
             btn.textContent = "X";
-            btn.style.position = "absolute";
-            btn.style.top = "-5px";
-            btn.style.right = "-5px";
-            btn.style.background = "red";
-            btn.style.color = "white";
-            btn.style.border = "none";
-            btn.style.borderRadius = "50%";
-            btn.style.width = "20px";
-            btn.style.height = "20px";
-            btn.style.cursor = "pointer";
+            btn.classList.add("btn-eliminar");
+            btn.addEventListener("click", () => eliminarDelCarrito3(index));
+            div.appendChild(btn);
+
+            promo3Carrito.appendChild(div);
 
             btn.addEventListener("click", () => {
                 carrito3.splice(index, 1);
