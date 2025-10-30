@@ -272,6 +272,180 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* --------------- promociones -------------------*/
+.panel-promos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 251, 247);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 700px;
+}
+
+.panel-promos h1 {
+    color: rgb(148, 107, 50);
+    border-bottom: 3px solid rgb(175, 144, 81);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.panel-promos h2 {
+    color: rgb(112, 69, 44);
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.resultado {
+    background-color: #fffaf1;
+    border-left: 4px solid rgb(175, 144, 81);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 17px;
+    color: rgb(90, 60, 30);
+}
+
+select {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #d3a87c;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+select:hover {
+    border-color: #b3744c;
+    background-color: #fff3e6;
+}
+
+select:focus {
+    outline: none;
+    border-color: #8c4f2d;
+    box-shadow: 0 0 5px rgba(140, 79, 45, 0.5);
+}
+
+.home-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #d3a87c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #b3744c;
+}
+
+#carrito div {
+    background-color: #fff8f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#carrito input[type="number"] {
+    border-radius: 6px;
+    border: 1px solid #d3a87c;
+    padding: 4px;
+    text-align: center;
+}
+
+#carrito button {
+    font-weight: bold;
+    color: red;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.resultado-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.resultado-img img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.resultado-nombre {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cc9960;
+}
+
+.resultado-precio {
+    font-size: 20px;
+    color: #966936;
+}
+
+.resultado-ahorro {
+    font-size: 22px;
+    color: rgb(185, 147, 64);
+    font-weight: bold;
+    border: 1px solid #d3a87c;
+    padding: 10px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff8f0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 10px;
+}
+
+.carrito-nombre {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    color: #703f1c;
+}
+
+.carrito-cantidad {
+    width: 60px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #d3a87c;
+    font-size: 16px;
+}
+
+.carrito-subtotal {
+    flex: 0.4;
+    text-align: right;
+    font-size: 16px;
+    color: #333;
+}
+
+.carrito-eliminar {
+    font-weight: bold;
+    color: rgb(119, 55, 29);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
 /* --------------- contacto -------------------*/
 .panel-contacto {
     flex: 1;
