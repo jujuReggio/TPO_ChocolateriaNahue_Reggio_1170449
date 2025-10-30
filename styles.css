@@ -273,6 +273,7 @@ nav ul li a:hover {
 }
 
 /* --------------- promociones -------------------*/
+/* estilos y elementos generales*/
 .panel-promos {
     display: flex;
     flex-direction: column;
@@ -308,6 +309,7 @@ nav ul li a:hover {
     color: rgb(90, 60, 30);
 }
 
+/*los select*/
 select {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -322,19 +324,18 @@ select {
     transition: all 0.3s ease;
     appearance: none;
 }
-
 select:hover {
     border-color: #b3744c;
     background-color: #fff3e6;
 }
-
 select:focus {
     outline: none;
     border-color: #8c4f2d;
     box-shadow: 0 0 5px rgba(140, 79, 45, 0.5);
 }
 
-.home-button {
+/*los botones*/
+.add-button {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     padding: 10px 18px;
@@ -346,10 +347,11 @@ select:focus {
     transition: background-color 0.3s ease;
 }
 
-.home-button:hover {
+.add-button:hover {
     background-color: #b3744c;
 }
 
+/*carritos*/
 #carrito div {
     background-color: #fff8f0;
     padding: 10px;
@@ -372,6 +374,7 @@ select:focus {
     cursor: pointer;
 }
 
+/*resultado*/
 .resultado-container {
     display: flex;
     flex-direction: column;
@@ -402,7 +405,7 @@ select:focus {
     border: 1px solid #d3a87c;
     padding: 10px;
 }
-
+/*promocion 3*/
 .carrito-item {
     display: flex;
     justify-content: space-between;
@@ -445,6 +448,57 @@ select:focus {
     font-size: 16px;
 }
 
+/*Para las opciones desplegables*/
+.promo-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.promo-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px 10px;
+    background-color: #f1eee7;
+    transition: background-color 0.3s ease;
+}
+.arrow {
+    font-size: 2rem;
+    line-height: 1;
+    transition: transform 0.3s;
+    color: #6b4f3a;
+}
+
+.promo-content {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.promo3-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.promo3-container .promo3-item {
+    text-align: center;
+    margin: 5px;
+    flex: 1 1 120px;
+}
+
+.promo3-container img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    border-radius: 10px;
+}
 
 /* --------------- contacto -------------------*/
 .panel-contacto {
@@ -683,5 +737,14 @@ input[type="submit"]:hover {
      .Header_Complete h1,
     .Header_Logo h1 {
         font-size: 20px;
+    }
+}
+
+/*promos*/
+
+@media (max-width: 400px) {
+    .promo3-container .promo3-item {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 }

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { nombre: "Caja Bombones Amargos x12", precio: 13800, img: "Imagenes/Productos_Bombones/Bombones_x12.png" },
         { nombre: "Caja Bombones Blancos x12", precio: 14500, img: "Imagenes/Productos_Bombones/Bombones_BlancoX12.png" },
         { nombre: "Caja Bombones Blancos x6", precio: 8200, img: "Imagenes/Productos_Bombones/Bombones_BlancoX6.png" },
-        { nombre: "Caja Bombones Amargos x6", precio: 8500, img: "Imagenes/Productos_Bombones/Bombones_Amargos6.png" },
+        { nombre: "Caja Bombones Amargos x6", precio: 8500, img: "Imagenes/Productos_Bombones/Bombones_AmargosX6.png" },
         
         { nombre: "Alfajor de Mousse (caja x4)", precio: 11800, img: "Imagenes/Productos_Otros/Otros_AlfajoresCaja.png" },
         { nombre: "Alfajor de Mousse (unidad)", precio: 3200, img: "Imagenes/Productos_Otros/Otros_AlfajorUnidad.png" },
@@ -258,7 +258,7 @@ carrito.forEach((item, index) => {
     function renderCarrito3() {
         carrito3Div.innerHTML = "";
         if(carrito3.length === 0){
-            grupoActivo = null; // resetear grupo si carrito vacío
+            grupoActivo = null;
             actualizarSelect3();
             resultado3.innerHTML = "";
             btnAgregar3.disabled = false; // habilitar botón al inicio
@@ -268,13 +268,21 @@ carrito.forEach((item, index) => {
             const div = document.createElement("div");
             div.style.display = "inline-block";
             div.style.position = "relative";
+             div.style.textAlign = "center"; 
+            div.style.marginRight = "10px";
 
             const img = document.createElement("img");
             img.src = p.img;
             img.alt = p.nombre;
-            img.style.width = "120px";
+            img.style.height = "120px";
             img.style.borderRadius = "8px";
             div.appendChild(img);
+
+            const precio = document.createElement("p");
+            precio.textContent = `$${p.precio.toLocaleString("es-AR")}`;
+            precio.style.margin = "5px 0 0 0";
+            precio.style.fontWeight = "bold";
+            div.appendChild(precio);
 
             const btn = document.createElement("button");
             btn.textContent = "X";
@@ -349,4 +357,19 @@ carrito.forEach((item, index) => {
     });
 
     actualizarSelect3();
+});
+
+document.querySelectorAll('.promo-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+
+        if(content.style.display === "block"){
+            content.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+        } else {
+            content.style.display = "block";
+            arrow.style.transform = "rotate(180deg)";
+        }
+    });
 });

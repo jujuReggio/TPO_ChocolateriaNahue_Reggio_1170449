@@ -28,46 +28,60 @@
     </header>
 
     <main class="panel-container">
-        <section class="panel panel-promos">
-            <h1>Promoción Especial</h1>
-            <h2>70 % de descuento en la segunda unidad</h2>
+        <div class="promo-accordion">
 
-            <label for="productoSelect">Seleccioná un producto:</label>
-            <select id="productoSelect">
-                <option value="">-- Elegí un producto --</option>
-            </select>
-
-            <div id="promoResultado" class="resultado" style="display:none; margin-top:20px;"></div>
-        </section>
-
-        <section class="panel panel-promos">
-            <h1>Promoción Especial</h1>
-            <h2> 10% de descuento por compras superiores a $30.000</h2>
-
-            <label for="productoSelect2">Seleccioná un producto para agregar:</label>
-            <select id="productoSelect2">
-                <option value="">-- Elegí un producto --</option>
-            </select>
-            <button class="home-button" id="btnAgregarProducto">Agregar producto</button>
-
-            <div id="carrito" style="margin-top:20px;"></div>
-
-            <div id="resultado2" class="resultado" style="display:none; margin-top:20px;"></div>
-        </section>
-
-        <section class="panel panel-promos">
-            <h1>Promoción Especial</h1>
-            <h2> 3x2 en productos seleccionados</h2>
+            <section class="panel promo-item">
+                <div class="promo-header">
+                    <h1>Promoción Especial</h1>
+                    <h2>70 % de descuento en la segunda unidad</h2>
+                    <span class="arrow">&#9662;</span>
+                </div>
+                <div class="promo-content">
+                    <label for="productoSelect">Seleccioná un producto:</label>
+                    <select id="productoSelect">
+                        <option value="">-- Elegí un producto --</option>
+                    </select>
+                    <div id="promoResultado" class="resultado" style="display:none; margin-top:20px;"></div>
+                </div>
+            </section>
             
-            <label for="promo3Select">Seleccioná un producto:</label>
-            <select id="promo3Select">
-            <option value="">-- Elegí un producto --</option>
-            </select>
-            <button id="btnAgregarPromo3" class="home-button">Agregar al combo</button>
+            <section class="panel promo-item">
+                <div class="promo-header">
+                    <h1>Promoción Especial</h1>
+                    <h2> 10% de descuento por compras superiores a $30.000</h2>
+                    <span class="arrow">&#9662;</span>
+                </div>
+                <div class="promo-content">
+                    <label for="productoSelect2">Seleccioná un producto para agregar:</label>
+                    <select id="productoSelect2">
+                        <option value="">-- Elegí un producto --</option>
+                    </select>
+                    <button class="add-button" id="btnAgregarProducto">Agregar producto</button>
+    
+                    <div id="carrito" style="margin-top:20px;"></div>
+    
+                    <div id="resultado2" class="resultado" style="display:none; margin-top:20px;"></div>
+                </div>
+            </section>
 
-            <div id="promo3Carrito" style="display:flex; gap:10px; margin-top:15px;"></div>
-            <div id="promo3Resultado" class="resultado" style="margin-top:20px;"></div>
-        </section>
+            <section class="panel promo-item">
+                <div class="promo-header">
+                    <h1>Promoción Especial</h1>
+                    <h2> 3x2 en productos seleccionados</h2>
+                    <span class="arrow">&#9662;</span>
+                </div>
+                <div class="promo-content">
+                    <label for="promo3Select">Seleccioná un producto:</label>
+                    <select id="promo3Select">
+                    <option value="">-- Elegí un producto --</option>
+                    </select>
+                    <button id="btnAgregarPromo3" class="add-button">Agregar al combo</button>
+
+                    <div id="promo3Carrito" style="display:flex; gap:10px; margin-top:15px;"></div>
+                    <div id="promo3Resultado" class="resultado" style="margin-top:20px;"></div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
